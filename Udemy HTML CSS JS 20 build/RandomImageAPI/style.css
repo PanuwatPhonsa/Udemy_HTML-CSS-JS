@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box; /* กำหนดให้ทุก element ใช้ box-sizing เป็น border-box ซึ่งคำนวณขนาดของ element รวมถึง padding และ border ด้วย */
+}
+
+body {
+    display: flex; /* กำหนดให้ body เป็น flex container */
+    flex-direction: column; /* กำหนดลักษณะการเรียงลำดับของ items เป็นแนวแกน column (ดิเรกชันตามแนวตั้ง) */
+    align-items: center; /* จัดการความสัมพันธ์ตามแนวแกนตั้ง (แนว Y) ให้ items อยู่ตรงกลาง */
+    justify-content: center; /* จัดการความสัมพันธ์ตามแนวแกนนอน (แนว X) ให้ items อยู่ตรงกลาง */
+    min-height: 100vh; /* กำหนดความสูงขั้นต่ำของ body เท่ากับ 100% ของ viewport height */
+    margin: 0; /* กำหนดให้ไม่มีการเว้นระยะห่างขอบของ body */
+}
+
+.container {
+    display: flex; /* กำหนดให้ container เป็น flex container */
+    justify-content: center; /* จัดการความสัมพันธ์ตามแนวแกนนอน (แนว X) ให้ items อยู่ตรงกลาง */
+    align-items: center; /* จัดการความสัมพันธ์ตามแนวแกนตั้ง (แนว Y) ให้ items อยู่ตรงกลาง */
+    flex-wrap: wrap; /* กำหนดให้ items ที่อยู่ใน container ขึ้นบรรทัดใหม่เมื่อครบขอบเขตของ container */
+    max-width: 1000px; /* กำหนดความกว้างสูงสุดของ container เท่ากับ 1000px */
+}
+
+.container img {
+    width: 300px; /* กำหนดความกว้างของภาพเป็น 300px */
+    height: 300px; /* กำหนดความสูงของภาพเป็น 300px */
+    object-fit: cover; /* ปรับขนาดของภาพให้เต็มพื้นที่ของ container โดยไม่เปลี่ยนแปลงสัดส่วน */
+    margin: 10px; /* กำหนดขอบเขตระยะห่างระหว่างภาพ */
+    max-width: 100%; /* กำหนดให้ภาพมีขนาดไม่เกินความกว้างของ container */
+    transition: all .3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนแปลงทุกรูปแบบของภาพให้เป็นการเคลื่อนไหวเรียบขึ้น (0.3 วินาที) */
+    border-radius: 3px; /* เพิ่มเส้นโค้งรอบขอบภาพ */
+}
+
+.container img:hover {
+    transform: scale(1.10); /* เมื่อผู้ใช้นำเมาส์มา hover ที่ภาพ ภาพจะขยายขนาดใหญ่ขึ้น 110% */
+}

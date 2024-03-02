@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#000;
+    --secondaryColor:#fff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.time{
+    font-size: 60px;
+}
+.toggle{
+    cursor: pointer;
+    background: var(--primary);
+    color: var(--secondaryColor);
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 470px;
+}
+html.dark{
+    --primary:#990099;
+    --secondaryColor:#333;
+}
+html.dark{
+    background: #111;
+    color: var(--primary);
+}
+html{
+    transition: all 0.5s ease-out;
+}
+

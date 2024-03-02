@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #222;
+    padding-bottom: 50px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #222; 
+    transition: all .3s ease-in-out;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px;
+}
+.nav a:hover{
+    color: orange;
+}
+.cover{
+    background: url("/Sticky-Navigation/image/image/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 20px;
+}
+.content h2{
+    font-size: 150%;
+    margin: 20px 0;
+}
+.content p{
+    color: #555;
+}
+.nav.active{
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+    
+}
+.nav.active a{
+    color: black;
+}
+.nav.active a:hover{
+    color: purple;
+}

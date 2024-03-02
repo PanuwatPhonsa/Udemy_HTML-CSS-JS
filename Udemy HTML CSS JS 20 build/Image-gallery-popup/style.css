@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+.img-container img{
+   width: 100%; 
+   height: 100%;
+   object-fit: cover;
+   cursor: pointer;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* pointer-events: none; จะทำให้ element ไม่ตอบสนองต่อการเช็คและตรวจจับการกระทำของเมาส์ (mouse events) หรืออีเวนต์ที่เกี่ยวข้องกับการใช้เมาส์ เช่น click, hover, mousedown, mouseup, ฯลฯ */
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.full-image{
+    position: absolute;
+    height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}
