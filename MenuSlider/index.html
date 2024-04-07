@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://freepngimg.com/save/9880-batman-logo-png/1600x1044"
+          alt=""
+        />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <h1>Pdev</h1>
+      <p>Learn Coding and creating game</p>
+      <button class="create-account" id="open">Create Account</button>
+    </header>
+    <div class="container">
+      <h2>Web Development</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+        dignissimos aut quas nesciunt dolores commodi excepturi natus itaque
+        quisquam amet, est id incidunt facere, ullam recusandae voluptates,
+        dolorem assumenda inventore.
+      </p>
+      <h2>Game Development</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+        dignissimos aut quas nesciunt dolores commodi excepturi natus itaque
+        quisquam amet, est id incidunt facere, ullam recusandae voluptates,
+        dolorem assumenda inventore.
+      </p>
+    </div>
+    <div id="modal" class="modal-container">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Create user</h3>
+        </div>
+        <div class="modal-content">
+          <p>Form</p>
+          <form class="modal-form">
+            <div>
+              <label for="">User</label>
+              <input type="text" class="form-input" />
+            </div>
+            <div>
+              <label for="">E-mail</label>
+              <input type="text" class="form-input" />
+            </div>
+            <div>
+              <label for="">Password</label>
+              <input type="text" class="form-input" />
+            </div>
+            <input type="submit" value="save" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

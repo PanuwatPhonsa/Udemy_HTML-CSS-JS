@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Kanban Board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- category 1 -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <div class="custom-scroll" id="backlog">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true">Design Animation</li>
+                        <li class="drag-item" draggable="true">Present Work</li>
+                    </ul>
+                </div>
+            </li>
+            <!-- category 2 -->
+            <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>Progressing</h1>
+                </span>
+                <div class="custom-scroll" id="backlog">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true">Design Logo</li>
+                        <li class="drag-item" draggable="true">Edit clips</li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- category 3 -->
+            <li class="drag-column complete-column">
+                <span class="header">
+                    <h1>Complete</h1>
+                </span>
+                <div class="custom-scroll" id="backlog">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true">Design Logo</li>
+                        <li class="drag-item" draggable="true">Edit clips</li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- category 4 -->
+            <li class="drag-column reject-column">
+                <span class="header">
+                    <h1>Reject</h1>
+                </span>
+                <div class="custom-scroll" id="backlog">
+                    <ul class="drag-item-list" id="backlog-list">
+                        
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
